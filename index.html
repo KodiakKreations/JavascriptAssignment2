@@ -25,12 +25,12 @@
             </div>
             <div id="bottom">
                 <div class="flex">
-                    <button>{{ answer(0) }}</button>
-                    <button>{{ answer(1) }}</button>
+                    <button id="a" @click="isAnswerCorrect" data-key="65" data-index="0">A: {{ answer(0) }}</button>
+                    <button id="b" @click="isAnswerCorrect" data-key="66" data-index="1">B: {{ answer(1) }}</button>
                 </div>
                 <div class="flex">
-                    <button>{{ answer(2) }}</button>
-                    <button>{{ answer(3) }}</button>
+                    <button id="c" @click="isAnswerCorrect" data-key="67" data-index="2">C: {{ answer(2) }}</button>
+                    <button id="d" @click="isAnswerCorrect" data-key="68" data-index="3">D: {{ answer(3) }}</button>
                 </div>
             </div>
         </main>
